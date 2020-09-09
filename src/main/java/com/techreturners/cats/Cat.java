@@ -2,16 +2,24 @@ package com.techreturners.cats;
 
 public abstract class Cat {
 
-    public abstract Boolean isAsleep();
+    Boolean isCatAsleep = false;
 
+    public Boolean isAsleep() {
+        return isCatAsleep;
+    }
+
+    @Override
     public abstract String getSetting();
 
+    @Override
     public abstract int getAverageHeight();
 
+    @Override
     public abstract String eat();
 
+    @Override
     public abstract String goToSleep();
 
-    public String wakeUp() {
-    }
+    @Override
+    public abstract String wakeUp();
 }
