@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-class Cat {
+public abstract class Cat {
 
     public Boolean isAsleep();// {
      //   return True;

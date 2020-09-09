@@ -1,9 +1,9 @@
 package com.techreturners.cats;
 
-class DomesticCat implements Cat{
+class DomesticCat extends Cat {
 
     public Boolean isAsleep() {
-        return True;
+        return true;
     
     } 
     public String getSetting() {
