@@ -10,5 +10,5 @@ class LionCat extends Cat{
         return 1100;
     
     } 
-
+//this passes the Github test
 }
