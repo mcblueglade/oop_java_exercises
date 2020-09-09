@@ -17,4 +17,7 @@ public abstract class Cat {
         //return "";
     
     //}  
+    public String goToSleep();
+    
+    public String wakeUp();
 }

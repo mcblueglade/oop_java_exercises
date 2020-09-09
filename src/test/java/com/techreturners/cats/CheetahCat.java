@@ -1,9 +1,9 @@
 package com.techreturners.cats;
 
-class CheetahCat implements Cat {
+class CheetahCat extends Cat {
 
     public String eat() {
-        return "";
+        return "Zzzzzzz";
     
     } 
 

@@ -1,9 +1,13 @@
 package com.techreturners.cats;
 
-class LionCat implements Cat{
+class LionCat extends Cat{
 
     public String eat() {
-        return "";
+        return "Roar!!!!";
+    
+    } 
+    public int getAverageHeight() {
+        return 1100;
     
     } 
 
