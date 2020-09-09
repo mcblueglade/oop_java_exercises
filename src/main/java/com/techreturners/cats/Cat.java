@@ -12,5 +12,6 @@ public abstract class Cat {
 
     public abstract String goToSleep();
 
-    public abstract String wakeUp();
+    public String wakeUp() {
+    }
 }
