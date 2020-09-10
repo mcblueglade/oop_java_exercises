@@ -1,25 +1,31 @@
 package com.techreturners.cats;
 
-public abstract class Cat {
+public abstract class Cat implements CatBehaviour {
 
-    Boolean isCatAsleep = false;
+    protected Boolean isCatAsleep = false;
+    protected int averageHeight = 0;
+    protected String type;
 
-    public Boolean isAsleep() {
-        return isCatAsleep;
+    public Cat() {
+        // this.isCatAsleep = false;
+        // this.averageHeight = 0;
     }
 
-    @Override
-    public abstract String getSetting();
+    public Boolean isAsleep() {
+        return this.isCatAsleep;
+    }
 
-    @Override
-    public abstract int getAverageHeight();
+    public int getAverageHeight() {
+        return this.averageHeight;
+    }
 
-    @Override
-    public abstract String eat();
+    public String getSetting() {
+        return this.type;
+    }
 
-    @Override
-    public abstract String goToSleep();
+    public String goToSleep() {
+        isCatAsleep = true;
+        return "Cat should be snoozing";
+    }
 
-    @Override
-    public abstract String wakeUp();
 }
