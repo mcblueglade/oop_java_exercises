@@ -6,10 +6,10 @@ public abstract class Cat implements CatBehaviour {
     protected int averageHeight = 0;
     protected String type;
 
-    public Cat() {
-        // this.isCatAsleep = false;
-        // this.averageHeight = 0;
-    }
+    // public Cat() {
+    // this.isCatAsleep = false;
+    // this.averageHeight = 0;
+    // }
 
     public Boolean isAsleep() {
         return this.isCatAsleep;
