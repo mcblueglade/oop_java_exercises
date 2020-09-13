@@ -2,16 +2,16 @@ package com.techreturners.cats;
 
 public abstract class Cat implements CatBehaviour {
 
-    protected Boolean isCatAsleep = false;
-    protected int averageHeight = 0;
-    protected String type;
+    protected boolean isCatAsleep = false;
+    private int averageHeight = 0;
+    private String setting;
 
-    // public Cat() {
-    // this.isCatAsleep = false;
-    // this.averageHeight = 0;
-    // }
+    public Cat(int averageHeight, String setting) {
+        this.averageHeight = averageHeight;
+        this.setting = setting;
+    }
 
-    public Boolean isAsleep() {
+    public boolean isAsleep() {
         return this.isCatAsleep;
     }
 
@@ -20,12 +20,16 @@ public abstract class Cat implements CatBehaviour {
     }
 
     public String getSetting() {
-        return this.type;
+        return this.setting;
     }
 
     public String goToSleep() {
         isCatAsleep = true;
         return "Cat should be snoozing";
+    }
+
+    public void setToWakeUp() {
+        this.isCatAsleep = false;
     }
 
 }

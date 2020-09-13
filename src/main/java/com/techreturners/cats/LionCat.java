@@ -3,21 +3,22 @@ package com.techreturners.cats;
 class LionCat extends Cat {
 
     public LionCat() {
-        this.type = "wild";
-        this.averageHeight = 1100;
+        super(1100, "wild");
     }
 
+    @Override
     public String eat() {
         return "Roar!!!!";
     }
 
     @Override
-    public Boolean isASleep() {
+    public boolean isAsleep() {
         return super.isAsleep();
     }
 
     @Override
     public String wakeUp() {
-        return null;
+        super.setToWakeUp();
+        return null; // TODO
     }
 }

@@ -3,22 +3,22 @@ package com.techreturners.cats;
 class CheetahCat extends Cat {
 
     public CheetahCat() {
-        this.type = "wild";
-        // TODO this.averageHeight = 0;
+        super(70, "wild");
     }
 
+    @Override
     public String eat() {
         return "Zzzzzzz";
     }
 
     @Override
-    public Boolean isASleep() {
-        // TODO Auto-generated method stub
+    public boolean isAsleep() {
         return super.isAsleep();
     }
 
     @Override
     public String wakeUp() {
-        return null;
+        super.setToWakeUp();
+        return null; // TODO
     }
 }

@@ -2,7 +2,7 @@ package com.techreturners.cats;
 
 public interface CatBehaviour {
 
-    public Boolean isASleep();
+    public boolean isAsleep();
 
     public String getSetting();
 
@@ -13,4 +13,5 @@ public interface CatBehaviour {
     public String goToSleep();
 
     public String wakeUp();
+
 }
