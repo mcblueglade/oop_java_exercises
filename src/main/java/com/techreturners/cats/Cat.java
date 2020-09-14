@@ -25,7 +25,7 @@ public abstract class Cat implements CatBehaviour {
     }
 
     public String goToSleep() {
-        isCatAsleep = true;
+        this.isCatAsleep = true;
         return "Cat should be snoozing";
     }
 
