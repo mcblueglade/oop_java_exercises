@@ -1,5 +1,6 @@
 package com.techreturners.cats;
 
+// DomesticCat extends abstract class Cat
 class DomesticCat extends Cat {
 
     public DomesticCat() {

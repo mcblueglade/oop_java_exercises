@@ -1,5 +1,6 @@
 package com.techreturners.cats;
 
+// CheetahCat extends abstract class Cat
 class CheetahCat extends Cat {
 
     public CheetahCat() {

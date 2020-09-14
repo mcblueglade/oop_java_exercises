@@ -1,5 +1,6 @@
 package com.techreturners.cats;
 
+// Abstract Cat implements CatBehaviour
 public abstract class Cat implements CatBehaviour {
 
     protected boolean isCatAsleep = false;

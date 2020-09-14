@@ -1,5 +1,6 @@
 package com.techreturners.cats;
 
+// CatBehaviour
 public interface CatBehaviour {
 
     public boolean isAsleep();

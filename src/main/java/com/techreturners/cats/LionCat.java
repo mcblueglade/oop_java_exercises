@@ -1,5 +1,6 @@
 package com.techreturners.cats;
 
+// LionCat extends abstract class Cat
 class LionCat extends Cat {
 
     public LionCat() {
